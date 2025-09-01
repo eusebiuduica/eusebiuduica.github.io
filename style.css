@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f4f4f9;
+}
+
+h1 {
+  text-align: center;
+  font-family: initial;
+}
+
+label
+{
+	font-family: initial;
+	padding: 2px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.filters-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.custom-select {
+  position: relative;
+  width: 120px;
+}
+
+.custom-select button.selected-btn {
+  width: 100%;
+  padding: 4px 6px;
+  font-family: initial;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: left;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.options {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+}
+
+.options li {
+  padding: 4px 6px;
+  font-family: initial;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.options li img {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+.options li[data-value="Darkness"] img {
+  width: 40px; height: 16px;
+}
+
+.options li[data-value="Fire"] img {
+  width: 16px; height: 16px;
+  padding: 0px 12px;
+}
+
+.options li[data-value="Light"] img {
+  width: 16px; height: 16px;
+  padding: 0px 12px;
+}
+
+.options li[data-value="Nature"] img {
+  width: 40px; height: 16px;
+}
+
+.options li[data-value="Water"] img {
+  width: 40px; height: 16px;
+}
+
+
+.options li:hover {
+  background-color: #eee;
+}
+
+.options.hidden {
+  display: none;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Duel Masters Catalog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Duel Masters Catalog</h1>
+
+  <div class="filters-row">
+  <!-- Civilization -->
+  <label>Civilization:</label>
+  <div class="custom-select">
+    <button class="selected-btn" data-select="civilization">All</button>
+    <ul class="options hidden" data-select="civilization">
+      <li data-value="All">All</li>
+	  <li data-value="Darkness" style="color:purple;"><img src="resources/darkness.png" alt="">Darkness</li>
+      <li data-value="Fire" style="color:red;"><img src="resources/fire.png" alt="">Fire</li>
+	  <li data-value="Light" style="color:gold;"><img src="resources/light.png" alt="">Light</li>
+	  <li data-value="Nature" style="color:green;"><img src="resources/nature.png" alt="">Nature</li>
+      <li data-value="Water" style="color:blue;"><img src="resources/water.png" alt="">Water</li>
+    </ul>
+  </div>
+
+  <!-- Mana -->
+  <label>Mana:</label>
+  <div class="custom-select">
+    <button class="selected-btn" data-select="mana">All</button>
+    <ul class="options hidden" data-select="mana">
+      <li data-value="All">All</li>
+      <li data-value="1">1</li>
+      <li data-value="2">2</li>
+      <li data-value="3">3</li>
+      <li data-value="4">4</li>
+      <li data-value="5">5</li>
+      <li data-value="6">6</li>
+      <li data-value="7">7</li>
+      <li data-value="8">8</li>
+      <li data-value="9">9</li>
+      <li data-value="10">10</li>
+      <li data-value="11">11</li>
+      <li data-value="12">12</li>
+      <li data-value="13">13</li>
+    </ul>
+  </div>
+
+  <!-- Type -->
+    <label>Type:</label>
+  <div class="custom-select">
+    <button class="selected-btn" data-select="type">All</button>
+    <ul class="options hidden" data-select="type">
+      <li data-value="All">All</li>
+      <li data-value="Creature">Creature</li>
+      <li data-value="Spell">Spell</li>
+      <li data-value="Evolution Creature">Evolution</li>
+    </ul>
+  </div>
+
+  <!-- Power -->
+      <label>Power:</label>
+  <div class="custom-select">
+    <button class="selected-btn" data-select="power">All</button>
+    <ul class="options hidden" data-select="power">
+      <li data-value="All">All</li>
+		<li data-value="0">0</li>
+		<li data-value="500">500</li>
+		<li data-value="1000">1000</li>
+		<li data-value="1500">1500</li>
+		<li data-value="2000">2000</li>
+		<li data-value="2500">2500</li>
+		<li data-value="3000">3000</li>
+		<li data-value="3500">3500</li>
+		<li data-value="4000">4000</li>
+		<li data-value="4500">4500</li>
+		<li data-value="5000">5000</li>
+		<li data-value="5500">5500</li>
+		<li data-value="6000">6000</li>
+		<li data-value="6500">6500</li>
+		<li data-value="7000">7000</li>
+		<li data-value="7500">7500</li>
+		<li data-value="8000">8000</li>
+		<li data-value="8500">8500</li>
+		<li data-value="9000">9000</li>
+		<li data-value="9500">9500</li>
+		<li data-value="10000">10000</li>
+		<li data-value="10500">10500</li>
+		<li data-value="11000">11000</li>
+		<li data-value="11500">11500</li>
+		<li data-value="12000">12000</li>
+		<li data-value="12500">12500</li>
+		<li data-value="13000">13000</li>
+		<li data-value="13500">13500</li>
+		<li data-value="14000">14000</li>
+		<li data-value="14500">14500</li>
+		<li data-value="15000">15000</li>
+    </ul>
+  </div>
+
+  <!-- Rarity (cu imagini) -->
+        <label>Rarity:</label>
+  <div class="custom-select">
+    <button class="selected-btn" data-select="rarity">All</button>
+    <ul class="options hidden" data-select="rarity">
+      <li data-value="All">All</li>
+      <li data-value="[Common]"><img src="resources/rarity-c.png" alt=""> Common</li>
+      <li data-value="[Uncommon]"><img src="resources/rarity-u.png" alt=""> Uncommon</li>
+      <li data-value="[Rare]"><img src="resources/rarity-r.png" alt=""> Rare</li>
+      <li data-value="[Very Rare]"><img src="resources/rarity-vr.png" alt=""> Very Rare</li>
+      <li data-value="[Super Rare]"><img src="resources/rarity-sr.png" alt=""> Super Rare</li>
+    </ul>
+  </div>
+  
+  <!-- Set (cu imagini) -->
+        <label>Set:</label>
+  <div class="custom-select">
+    <button class="selected-btn" data-select="set">All</button>
+    <ul class="options hidden" data-select="set">
+      <li data-value="All">All</li>
+      <li data-value="[DM-01]"><img src="resources/dm-01.png" alt=""> DM-01</li>
+      <li data-value="[DM-02]"><img src="resources/dm-02.png" alt=""> DM-02</li>
+      <li data-value="[DM-03]"><img src="resources/dm-03.png" alt=""> DM-03</li>
+      <li data-value="[DM-04]"><img src="resources/dm-04.png" alt=""> DM-04</li>
+      <li data-value="[DM-05]"><img src="resources/dm-05.png" alt=""> DM-05</li>
+      <li data-value="[DM-06]"><img src="resources/dm-06.png" alt=""> DM-06</li>
+      <li data-value="[DM-07]"><img src="resources/dm-07.png" alt=""> DM-07</li>
+      <li data-value="[DM-08]"><img src="resources/dm-08.png" alt=""> DM-08</li>
+    </ul>
+  </div>
+  
+  <div class="filter-group">
+  <label>Sort by:</label>
+  <div class="custom-select">
+    <button class="selected-btn" data-select="sort">None</button>
+    <ul class="options hidden" data-select="sort">
+      <li data-value="none">None</li>
+      <li data-value="cost">Mana</li>
+      <li data-value="power">Power</li>
+    </ul>
+  </div>
+</div>
+</div>
+
+
+
+
+<div id="card-list" class="cards"></div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
