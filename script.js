@@ -653,7 +653,7 @@ function displayCards(cards) {
     const div = document.createElement("div");
     div.className = "card";
     div.innerHTML = `
-      <img src="${card.image}" alt="${card.name}" class="card-img"/>
+      <img src="${card.image}" alt="${card.name}" class="card-img" loading="lazy"/>
       <h2>${card.name}</h2>
       <p><strong>Type:</strong> ${card.type}</p>
       <p><strong>Cost:</strong> ${card.cost}</p>
@@ -663,6 +663,7 @@ function displayCards(cards) {
     container.appendChild(div);
   });
 }
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
